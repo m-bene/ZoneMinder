@@ -1,3 +1,9 @@
+zoneminder (1.27.1-1) precise; urgency=high
+
+  * version bump for master
+
+ -- Martin Bene <hub@bene.priv.at>  Thu, 20 Mar 2014 16:35:11 -0200
+
 zoneminder (1.26.5-1) precise; urgency=high
 
   * improvements to zmupdate.pl, cleanups
