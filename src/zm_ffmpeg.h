@@ -92,6 +92,10 @@ extern "C" {
 #define ZM_FFMPEG_SVN	1
 #endif // FFMPEG_VERSION_INT
 
+#ifndef AV_ERROR_MAX_STRING_SIZE
+#define AV_ERROR_MAX_STRING_SIZE 512
+#endif
+
 /* Fix for not having SWS_CPU_CAPS_SSE2 defined */
 #ifndef SWS_CPU_CAPS_SSE2
 #define SWS_CPU_CAPS_SSE2     0x02000000
