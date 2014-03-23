@@ -21,7 +21,7 @@
 
 #if HAVE_LIBAVFORMAT
 
-#include "zm_ffmpeg_camera.h"
+#include "zm_ffmpeg_camera.h"s
 
 FfmpegCamera::FfmpegCamera( int p_id, const std::string &p_path, int p_width, int p_height, int p_colours, int p_brightness, int p_contrast, int p_hue, int p_colour, bool p_capture ) :
     Camera( p_id, FFMPEG_SRC, p_width, p_height, p_colours, ZM_SUBPIX_ORDER_DEFAULT_FOR_COLOUR(p_colours), p_brightness, p_contrast, p_hue, p_colour, p_capture ),
@@ -309,8 +309,8 @@ int FfmpegCamera::ReopenFfmpeg() {
     mCanCapture = false;
     pthread_t thread1;
     if (pthread_create( &thread1, NULL, ReopenFfmpegThreadCallback, (void*) this) != 0){
-        Error( "ReopenFfmpeg failed to create worker thread." );
-        return -1;
+        // Log a fatal error and exit the process.
+        Fatal( "ReopenFfmpeg failed to create worker thread." );
     }
 
     return 0;
