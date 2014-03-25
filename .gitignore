@@ -11,3 +11,17 @@ stamp-h.in
 scripts/ZoneMinder/blib
 Makefile.in
 debian
+distros/ubuntu1204/autoreconf.after
+distros/ubuntu1204/autoreconf.before
+distros/ubuntu1204/files
+distros/ubuntu1204/tmp
+distros/ubuntu1204/zoneminder-dbg.debhelper.log
+distros/ubuntu1204/zoneminder-dbg.substvars
+distros/ubuntu1204/zoneminder-dbg/
+distros/ubuntu1204/zoneminder.debhelper.log
+distros/ubuntu1204/zoneminder.postinst.debhelper
+distros/ubuntu1204/zoneminder.postrm.debhelper
+distros/ubuntu1204/zoneminder.prerm.debhelper
+distros/ubuntu1204/zoneminder.substvars
+distros/ubuntu1204/zoneminder/
+src/zm_config_defines.h
